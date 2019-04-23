@@ -37,7 +37,7 @@ namespace HelloAmsMVC.Controllers
             if (!year.HasValue) year = DateTime.Now.Year;
             if (!month.HasValue) month = DateTime.Now.Month;
 
-            return Content(year.Value + "/" + month.Value);
+            return Content(year.Value + "-" + month.Value);
             //return View();
         }
     }
