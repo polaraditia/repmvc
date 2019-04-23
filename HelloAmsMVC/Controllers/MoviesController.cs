@@ -30,6 +30,7 @@ namespace HelloAmsMVC.Controllers
             return View(viewModel);
         }
 
+        // GET: Movies/ByReleaseDate
         [Route("movies/byreleasedate/{year}/{month}")]
         public ActionResult ByReleaseDate(int? year, int? month)
         {
